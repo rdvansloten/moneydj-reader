@@ -46,9 +46,4 @@ python3 chart.py --start-date 2022-12-01 --end-date 2023-01-01 --output png
 
 A graph should now appear:
 
-<img src="graph.png" alt="Graph" width="640"/>
-
-## Running in Docker
-```sh
-
-```
+<img src="./graph.png" alt="Graph" width="640"/>
