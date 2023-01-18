@@ -1,6 +1,16 @@
 # MoneyDJ Reader
 A Python 3 reader for MoneyDJ URLs/formats (.djbcd)
 
+## Download the script
+Downloaded the latest release as a zip file: 
+- [main.zip](https://github.com/rdvansloten/moneydj-reader/archive/refs/heads/main.zip)
+
+or use Git from the terminal:
+
+```sh
+git clone https://github.com/rdvansloten/moneydj-reader.git
+```
+
 ## Edit the CSV file
 First, add your data sources into moneydj.csv in the format `name, url`. 
 

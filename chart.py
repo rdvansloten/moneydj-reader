@@ -59,6 +59,7 @@ def convert_djbcd(url):
 # Function to render a chart for each URL given
 def create_chart(data):
   fig, axs = plt.subplots(len(data))
+
   if len(data) > 1:
     fig.suptitle(f'Comparison of {len(data)} data sets')
   else:
@@ -77,9 +78,17 @@ def create_chart(data):
     # Render charts
     rc = RandomColor()
     color = rc.generate(luminosity='dark', format_='hex')[0]
-    axs[index].plot(dates, values, color)
-    axs[index].set_title(label=name, color=color)
-    axs[index].set
+
+    # Check if there is 1 or multiple items to process
+    if len(data.items()) > 1:
+      axs[index].plot(dates, values, color)
+      axs[index].set_title(label=name, color=color)
+      axs[index].set
+    else:
+      axs.plot(dates, values, color)
+      axs.set_title(label=name, color=color)
+      axs.set
+
   plt.tight_layout()
 
   # Save chart to desired output
