@@ -66,7 +66,7 @@ def create_chart(data):
     fig.suptitle(f'Data set')
 
   fig.set_figwidth(12)
-  fig.set_figheight(4)
+  fig.set_figheight(4+len(data))
   fig.canvas.manager.set_window_title('Graphs from MoneyDJ data')
 
   # Create chart using matplotlib
