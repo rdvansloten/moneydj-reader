@@ -3,3 +3,4 @@ randomcolor
 matplotlib
 python-dateutil
 argparse
+datetime
